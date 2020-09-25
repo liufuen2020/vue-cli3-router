@@ -1,17 +1,13 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
+  <div id="list">
+      列表<h1>{{ $store.state.name }}</h1>
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'App',
-  components: {
-    //HelloWorld
-  }
+  name: 'list',
 }
 </script>
 
