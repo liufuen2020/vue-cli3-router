@@ -26,6 +26,19 @@ export default {
           userName:this.username
         }
         if(!this.username){
+          this.$message({
+            showClose: true,
+            message: '请输入用户名',
+            type: 'error'
+          });
+          return;
+        }
+        if(!this.password){
+          this.$message({
+            showClose: true,
+            message: '请输入密码',
+            type: 'error'
+          });
           return;
         }
         localStorage.setItem("users",JSON.stringify(users));
